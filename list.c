@@ -88,6 +88,7 @@ uint32_t ListGet_ui32(List_ui32* list, size_t index) {
 void ListRemove_ui32(List_ui32* list, size_t index) {
   uint32_t len = list->Length;
   assert(index < len);
+  if (len == 0) return;
   if (index == len-1) {
     list->data[index] = 0; // zero it
   } else {

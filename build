@@ -1,0 +1,2 @@
+#!/bin/bash
+clang list_test.c list.c -o list_test -Wall -pedantic
